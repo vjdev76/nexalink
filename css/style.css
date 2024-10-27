@@ -1,9 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF5E14;
+    /*--primary: #FF5E14;*/
     --secondary: #5F656F;
     --light: #F5F5F5;
     --dark: #02245B;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body{
@@ -59,6 +63,86 @@ h6,
     font-weight: 500 !important;
 }
 
+.fa-color, .contact-text{
+    color: #02245B;
+}
+
+.btn-contact {
+    background-color: #02245B;
+    color: #FFFFFF;
+    border-color: #02245B;
+    transition: all 0.3s ease; /* Transición suave */
+    border-radius: 5px;
+}
+
+.btn-contact:hover {
+    background-color: #FFFFFF; 
+    color: #02245B;
+}
+
+.bg-contact{
+    background-color: #3e89a9;
+    border-radius: 5px;
+}
+
+.service-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-image {
+    transition: opacity 0.5s ease;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 20px;
+}
+
+.service-card:hover .overlay-image {
+    opacity: 0.3;
+}
+
+.service-card:hover .overlay-content {
+    opacity: 1;
+}
+
+.service-card:hover .overlay-content p {
+    display: block;
+}
+
+.service-card p {
+    display: none; /* Mantiene el texto oculto inicialmente */
+}
+
+.service-card:hover p {
+    display: block; /* Muestra el texto al hacer hover */
+}
+
+.text-white-overlay {
+    color: #FFFFFF !important;
+}
+
+@media (max-width: 768px) {
+    .overlay-content {
+        opacity: 1; /* Siempre visible en dispositivos móviles */
+    }
+
+    .overlay-image {
+        opacity: 0.8; /* Mantiene la imagen atenuada en móviles */
+    }
+
+    .service-card p {
+        display: block; /* Muestra el texto descriptivo en dispositivos móviles */
+    }
+}
 
 /*** Spinner ***/
 #spinner {
