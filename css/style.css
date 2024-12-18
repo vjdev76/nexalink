@@ -296,9 +296,6 @@ h6,
     width: 100%; /* Asegura que el contenedor ocupe el ancho completo */
 }
 
-
-
-
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link  {
         margin-right: 0;
