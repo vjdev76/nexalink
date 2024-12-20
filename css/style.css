@@ -10,7 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: linear-gradient(to right, #3e89a9 0%, #02245B 50%, #3b1d48 100%);
     /*color: #FFFFFF!important;*/
 }
@@ -379,9 +379,35 @@ h6,
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
     font-size: 18px;
-    color: var(--light);
+    color: var(--light)!important;
 }
 
+.page-header-camera {
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/camaras.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-telecommunications {
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/telecomunicaciones.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-electrical {
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/mantenimiento-electrico.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-techfloor {
+    background: linear-gradient(to right, rgba(2, 36, 91, 1) 0%, rgba(2, 36, 91, 0) 100%), url(../img/pisos-tecnologicos.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.custom-outline-btn { background: transparent; border: 1px solid #ffffff; color: #ffffff; padding: 0.375rem 0.75rem; /* Añadido padding */ font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; transition: background-color 0.3s, color 0.3s; }
+
+.custom-outline-btn:hover {
+    background: #ffffff;
+    color: #000000;
+}
 
 /*** Facts ***/
 .facts {
@@ -819,6 +845,7 @@ h6,
     font-weight: normal;
     text-transform: capitalize;
     transition: .3s;
+    text-decoration: none;
 }
 
 .footer .btn.btn-link::before {
